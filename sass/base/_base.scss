@@ -21,8 +21,8 @@ body {
   }
 
   @include desktop {
-    min-width: $tablet;
-    padding: 0;
+    min-width: $desktop;
+    padding: 0 15px;
   }
 }
 

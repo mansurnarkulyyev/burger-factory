@@ -16,7 +16,7 @@
     }
 
     @include desktop{
-      padding: 15px 0;
+      padding: 15px 15px;
     }
   }
 
@@ -34,10 +34,6 @@
 
     &--image {
       height: 40px;
-
-      @include desktop{
-        height: 30px;
-      }
     }
   }
 
@@ -49,7 +45,7 @@
 
     &--link{
       @include desktop{
-        font-size: 10px;
+        font-size: 12px;
       }
     }
 
