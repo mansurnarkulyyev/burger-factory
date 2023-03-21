@@ -536,6 +536,11 @@ body {
 .location__title {
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 1024px) {
+  .location__title {
+    margin-bottom: 20px;
+  }
+}
 .location__map {
   border-radius: 30px;
   position: relative;
