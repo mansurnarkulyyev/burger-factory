@@ -19,6 +19,11 @@ body {
     min-width: $tablet;
     padding: 0 50px;
   }
+
+  @include desktop {
+    min-width: $tablet;
+    padding: 0;
+  }
 }
 
 .section {

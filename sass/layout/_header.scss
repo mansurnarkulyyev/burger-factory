@@ -1,12 +1,22 @@
 .header {
+  box-shadow: 0px 3px 6px #00000029;
+  position: relative;
+  z-index: 1;
+ 
+  
   &__container {
     align-items: center;
     padding: 10px 10px;
     margin: 0 auto;
     justify-content: space-between;
+    
 
     @include tablet{
       padding: 10px 50px;
+    }
+
+    @include desktop{
+      padding: 15px 0;
     }
   }
 
@@ -24,6 +34,10 @@
 
     &--image {
       height: 40px;
+
+      @include desktop{
+        height: 30px;
+      }
     }
   }
 
@@ -33,12 +47,23 @@
     font-size: 12px;
     font-weight: 700;
 
+    &--link{
+      @include desktop{
+        font-size: 10px;
+      }
+    }
+
     @include tablet {
       display: flex;
       align-items: center;
       gap: 30px;
       margin-left: 30px;
       text-transform: uppercase;
+    }
+
+    @include desktop{
+      margin-left: 50px;
+      gap: 40px;
     }
   }
 }

@@ -60,6 +60,12 @@ body {
     padding: 0 50px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .container {
+    min-width: 768px;
+    padding: 0;
+  }
+}
 
 .section {
   padding: 50px 0 50px 0;
@@ -104,11 +110,20 @@ body {
     font-size: 56px;
     font-weight: 900;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1024px) {
+  .heading-one {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 320px) {
   .heading-two {
     font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
     font-size: 36px;
     font-weight: 900;
   }
+}
+@media screen and (min-width: 320px) {
   .subtitle {
     font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -116,9 +131,8 @@ body {
     font-weight: 700;
     line-height: 1.5;
   }
-  .subtitle--big {
-    font-size: 20px;
-  }
+}
+@media screen and (min-width: 320px) {
   .paragraph {
     font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -130,6 +144,11 @@ body {
   }
 }
 /*Layout*/
+.header {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  position: relative;
+  z-index: 1;
+}
 .header__container {
   align-items: center;
   padding: 10px 10px;
@@ -139,6 +158,11 @@ body {
 @media only screen and (min-width: 768px) {
   .header__container {
     padding: 10px 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header__container {
+    padding: 15px 0;
   }
 }
 .header__button {
@@ -154,11 +178,21 @@ body {
 .header__logo--image {
   height: 40px;
 }
+@media only screen and (min-width: 1024px) {
+  .header__logo--image {
+    height: 30px;
+  }
+}
 .header__menu {
   display: none;
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
+}
+@media only screen and (min-width: 1024px) {
+  .header__menu--link {
+    font-size: 10px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .header__menu {
@@ -167,6 +201,12 @@ body {
     gap: 30px;
     margin-left: 30px;
     text-transform: uppercase;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header__menu {
+    margin-left: 50px;
+    gap: 40px;
   }
 }
 
@@ -212,7 +252,13 @@ body {
   color: #2A2A2A;
   padding: 9px 25px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .button {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
 }
 .button--hidden {
   display: none;
@@ -247,11 +293,22 @@ body {
     text-align: left;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .hero__content {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
 .hero__title {
   margin-bottom: 20px;
 }
 .hero__text {
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  .hero__container {
+    position: relative;
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero {
@@ -273,10 +330,23 @@ body {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .hero__image {
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+  }
+}
 
 .ingridients {
   text-align: center;
   /*Swiper*/
+}
+@media only screen and (min-width: 1024px) {
+  .ingridients {
+    margin-top: 80px;
+  }
 }
 .ingridients__title {
   margin-bottom: 20px;

@@ -6,12 +6,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-
-  &__content{
+  &__content {
     margin-bottom: 50px;
 
     @include tablet {
       text-align: left;
+    }
+
+    @include desktop {
+      margin-top: 50px;
+      margin-bottom: 80px;
     }
   }
 
@@ -21,6 +25,12 @@
 
   &__text {
     margin-bottom: 20px;
+  }
+
+  &__container {
+    @include desktop {
+      position: relative;
+    }
   }
 
   @include tablet {
@@ -38,6 +48,13 @@
 
       @include tablet {
         margin-top: 0;
+      }
+
+      @include desktop {
+        width: 350px;
+        position: absolute;
+        top: 0;
+        left: 450px;
       }
     }
   }

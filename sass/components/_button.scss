@@ -6,7 +6,12 @@
   color: $fontPrimary;
   padding: 9px 25px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+
+  @include desktop{
+    font-size: 12px;
+    padding: 6px 18px;
+  }
 
   &--hidden {
     display: none;

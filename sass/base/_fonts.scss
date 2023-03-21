@@ -1,75 +1,75 @@
 /*Media rule up to 319*/
 @media screen and (max-width: 319px) {
-    .heading-one{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 56px;
-        font-weight: 900;
+  .heading-one {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+  }
+
+  .heading-two {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .subtitle {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    &--big {
+      font-size: 20px;
     }
+  }
 
-    .heading-two{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 36px;
-        font-weight: 900;
+  .paragraph {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+
+    &--bold {
+      font-weight: 700;
     }
-
-    .subtitle{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        margin-bottom: 10px;
-        font-weight: 700;
-        line-height: 1.5;
-
-        &--big{
-            font-size: 20px;
-        }
-    }
-
-    .paragraph{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        margin-bottom: 10px;
-        line-height: 1.7;
-
-        &--bold{
-            font-weight: 700;
-        }
-    }
+  }
 }
 
 /*Media rule from 320*/
-@media screen and (min-width: $mobile){
-    .heading-one{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 56px;
-        font-weight: 900;
+@media screen and (min-width: $mobile) {
+  .heading-one {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+
+    @include desktop{
+        font-size: 45px;
     }
+  }
 
-    .heading-two{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 36px;
-        font-weight: 900;
+  .heading-two {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .subtitle {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .paragraph {
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+
+    &--bold {
+      font-weight: 700;
     }
-
-    .subtitle{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        margin-bottom: 10px;
-        font-weight: 700;
-        line-height: 1.5;
-
-        &--big{
-            font-size: 20px;
-        }
-    }
-
-    .paragraph{
-        font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        margin-bottom: 10px;
-        line-height: 1.7;
-
-        &--bold{
-            font-weight: 700;
-        }
-    }
+  }
 }
