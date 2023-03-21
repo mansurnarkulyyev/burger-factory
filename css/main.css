@@ -123,6 +123,11 @@ body {
     font-weight: 900;
   }
 }
+@media only screen and (min-width: 320px) and (min-width: 1024px) {
+  .heading-two {
+    font-size: 45px;
+  }
+}
 @media screen and (min-width: 320px) {
   .subtitle {
     font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
@@ -410,6 +415,11 @@ body {
     text-align: left;
     order: 1;
     gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .story__content {
+    gap: 50px;
   }
 }
 .story__image {
