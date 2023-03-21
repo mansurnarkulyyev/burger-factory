@@ -125,7 +125,7 @@ body {
 }
 @media only screen and (min-width: 320px) and (min-width: 1024px) {
   .heading-two {
-    font-size: 45px;
+    font-size: 42px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -181,7 +181,7 @@ body {
   display: inline-block;
 }
 .header__logo--image {
-  height: 40px;
+  height: 50px;
 }
 .header__menu {
   display: none;
@@ -224,6 +224,11 @@ body {
     margin: 0 auto;
     align-items: center;
     padding: 15px 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer__wrap {
+    padding: 15px 15px;
   }
 }
 .footer__address {
@@ -345,7 +350,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .ingridients {
-    margin-top: 80px;
+    margin-top: 120px;
   }
 }
 .ingridients__title {
@@ -403,6 +408,11 @@ body {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (min-width: 1024px) {
+  .ingridients .swiper-slide img {
+    width: 120px;
+  }
 }
 
 .story {
@@ -463,13 +473,27 @@ body {
     gap: 30px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .burgers__list {
+    display: flex;
+    justify-content: center;
+  }
+}
 .burgers__component {
+  display: flex;
+  justify-content: center;
   width: 250px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 26px;
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .burgers__component {
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
 .burgers__component--container {
   padding: 20px;
@@ -485,11 +509,16 @@ body {
     width: 120px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .burgers__image {
+    width: 140px;
+  }
+}
 .burgers__text {
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.5;
 }
 .burgers__link {

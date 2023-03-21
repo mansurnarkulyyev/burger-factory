@@ -11,6 +11,10 @@
       align-items: center;
       padding: 15px 50px;
     }
+
+    @include desktop{
+      padding: 15px 15px;
+    }
   }
 
   &__address {

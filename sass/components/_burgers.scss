@@ -14,15 +14,28 @@
       display: flex;
       gap: 30px;
     }
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+     
+    }
   }
 
   &__component {
+    display: flex;
+    justify-content: center;
     width: 250px;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
     padding: 20px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @include desktop{
+      margin: 0;
+      margin-bottom: 30px;
+    }
 
     &--container {
       padding: 20px;
@@ -38,13 +51,17 @@
     @include tablet{
       width: 120px;
     }
+
+    @include desktop{
+      width: 140px;
+    }
   }
 
   &__text {
     font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     line-height: 1.5;
   }
 
