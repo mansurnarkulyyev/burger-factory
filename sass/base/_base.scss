@@ -1,0 +1,26 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $BgColorPrimary;
+  color: $fontPrimary;
+}
+
+/*General Responsive styles*/
+
+.container {
+  max-width: 319px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @include mobile {
+    min-width: $mobile;
+  }
+
+  @include tablet {
+    min-width: $tablet;
+    padding: 0 50px;
+  }
+}
+
+.section {
+  padding: 50px 0 50px 0;
+}

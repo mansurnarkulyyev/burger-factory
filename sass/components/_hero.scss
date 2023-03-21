@@ -1,0 +1,44 @@
+/*Media rule up to 319*/
+.hero {
+  text-align: center;
+  background-image: url(/images/background-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__content{
+    margin-bottom: 50px;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    margin: 0 auto;
+    &__container {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    &__image {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 300px;
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+}

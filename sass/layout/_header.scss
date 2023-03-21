@@ -1,0 +1,44 @@
+.header {
+  &__container {
+    align-items: center;
+    padding: 10px 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include tablet{
+      padding: 10px 50px;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    &--image {
+      height: 40px;
+    }
+  }
+
+  &__menu {
+    display: none;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-left: 30px;
+      text-transform: uppercase;
+    }
+  }
+}

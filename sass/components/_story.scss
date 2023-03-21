@@ -1,0 +1,36 @@
+.story {
+  text-align: center;
+  &__content {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      order: 1;
+      gap: 30px;
+    }
+  }
+
+  &__image {
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      width: 50%;
+      order: 2;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    text-align: left;
+  }
+}

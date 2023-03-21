@@ -1,0 +1,25 @@
+.button {
+  background-color: $buttonPrimary;
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: $fontPrimary;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 10px;
+
+  &--hidden {
+    display: none;
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &--yellow {
+    background-color: $buttonAccent;
+  }
+}

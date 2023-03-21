@@ -1,0 +1,32 @@
+.footer {
+  background-color: $BgColorSecondary;
+  text-align: center;
+  margin: 0 auto;
+
+  &__wrap {
+    padding: 15px 15px;
+    @include tablet {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      padding: 15px 50px;
+    }
+  }
+
+  &__address {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @include tablet {
+      margin-left: auto;
+      text-align: right;
+      margin-top: 0;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}

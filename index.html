@@ -1,0 +1,230 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Factory</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header begins-->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a class="header__logo" href="./index.html">
+            <img class="header__logo--image"src="./images/logo.png" alt="logo" />
+          </a>
+          <ul class="header__menu">
+            <li><a href="">Ingridient</a></li>
+            <li><a href="">Story</a></li>
+            <li><a href="">Burgers</a></li>
+            <li><a href="">Location</a></li>
+          </ul>
+          <button class="header__button button button--hidden" type="button">Order Now</button>
+        </nav>
+      </div>
+    </header>
+    <!--Header ends-->
+
+    <!--Hero begins-->
+    <section class="section hero">
+     <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title heading-one">Burger Factory</h1>
+          <p class="hero__text subtitle subtitle--big">Your dreamed burger close to your locations!</p>
+          <button class="button button--yellow">Discover the ingredients</button>
+         
+        </div> <img class="hero__image"  src="./images/hero-image.png" alt="burger" />
+      
+     </div></section>
+    <!--Hero ends-->
+
+    <!--Ingridients begins-->
+    <section class="section ingridients">
+      <div class="container">
+        <h2 class="ingridients__title heading-two">Ingredients</h2>
+        <p class="ingridients__subtitle subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id
+          arcu vel maximus.
+        </p>
+
+        <!--Slider begins-->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--Buns-->
+            <div class="swiper-slide">
+              <div class="swiper-component">
+                <img class="ingridients__image" src="./images/buns.png" alt="buns" />
+                <p class="ingridients__text">buns</p>
+              </div>
+            </div>
+             <!--Salad-->
+            <div class="swiper-slide">
+             <div class="swiper-component">
+                <img class="ingridients__image" src="./images/salad.png" alt="salad" />
+                <p class="ingridients__text">salad</p>
+             </div>
+            </div>
+             <!--Tomato-->
+            <div class="swiper-slide">
+              <div class="swiper-component">
+                <img class="ingridients__image" src="./images/tomato.png" alt="tomato" />
+                <p class="ingridients__text">tomato</p>
+              </div>
+            </div>
+            <!--Cheese-->
+            <div class="swiper-slide">
+              <div class="swiper-component">
+                <img class="ingridients__image" src="./images/cheese.png" alt="cheese" />
+                <p class="ingridients__text">cheese</p>
+              </div>
+            </div>
+             <!--Bacon-->
+            <div class="swiper-slide">
+              <div class="swiper-component">
+                <img class="ingridients__image" src="./images/bacon.png" alt="bacon" />
+                <p class="ingridients__text">bacon</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <p class=" ingridients__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non commodo elit. Integer risus orci, ultricies ac dapibus sed, dignissim interdum quam. Proin quis dignissim diam. Donec id magna placerat, fringilla odio et, efficitur lacus. Vivamus eu ultricies erat, eu lobortis nunc. Sed nec dignissim libero. Integer cursus leo nunc. Nulla mattis interdum nunc, sed semper turpis. Cras elit lorem, mollis ut feugiat ac, ultricies eu dolor.</p>
+
+        <!--Slider ends-->
+
+        <!--Static cards begin-->
+        <!-- <ul class="inrigients__list"> -->
+            <!--Buns-->
+          <!-- <li class="ingridients__component">
+            <div class="ingridients__component--container">
+              <img class="ingridients__image" src="./images/buns.png" alt="buns" />
+              <p class="ingridients__text">buns</p>
+            </div> 
+          </li>  -->
+            <!--Salad-->
+          <!-- <li class="ingridients__component">
+            <div class="ingridients__component--container">
+              <img class="ingridients__image" src="./images/salad.png" alt="salad" />
+              <p class="ingridients__text">salad</p>
+           
+            </div> 
+          </li> -->
+           <!--Tomato-->
+           <!-- <li class="ingridients__component">
+            <div class="ingridients__component--container">
+              <img class="ingridients__image" src="./images/tomato.png" alt="tomato" />
+              <p class="ingridients__text">tomato</p>
+            </div>
+          </li> -->
+          <!--Cheese-->
+          <!-- <li class="ingridients__component">
+           <div class="ingridients__component--container">
+              <img class="ingridients__image" src="./images/cheese.png" alt="cheese" />
+              <p class="ingridients__text">cheese</p>
+            </li>
+        </ul> -->
+        <!--Static cards end-->
+      <!-- </div> -->
+    </section>
+    <!--Ingridients ends-->
+
+    <!--Story begins-->
+    <article class="section story">
+      <div class="container story__content">
+        <img class="story__image" src="./images/story-image.jpg" alt="fast food" />
+        <div class="story__composition">
+        <h2 class="story__title heading-two">The story</h2>
+        
+        
+          <p class="story__subtitle subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id
+            arcu vel maximus.
+          </p>
+          <p class="story__text paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
+            consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non
+            commodo elit. Integer risus orci, ultricies ac dapibus sed, dignissim
+            interdum quam. Proin quis dignissim diam. Donec id magna placerat,
+            fringilla odio et, efficitur lacus. Vivamus eu ultricies erat, eu
+            lobortis nunc. Sed nec dignissim libero. Integer cursus leo nunc. Nulla
+            mattis interdum nunc, sed semper turpis. Cras elit lorem, mollis ut
+            feugiat ac, ultricies eu dolor.
+          </p>
+        </div>
+      
+      </div></article>
+    <!--Story ends-->
+
+    <!--Burgers begins-->
+    
+    <section class="section burgers">
+      <div class="container">
+        <h1 class="burgers__title heading-two">Burgers</h1>
+        <ul class="burgers__list">
+          <!--1 Burger-->
+          <li class="burgers__component">
+            <h3 class="burgers__text">1/4 Pound Cheese</h3>
+            <img class="burgers__image"  src="./images/burger.png" alt="1/4 Pound Cheese" />
+            <button class="burgers__link">Details</button>
+          </li>
+           <!--2 Burger-->
+           <li class="burgers__component">
+            <h3 class="burgers__text">Big Burger</h3>
+            <img class="burgers__image"  src="./images/burger.png" alt="1/4 Pound Cheese" />
+            <button class="burgers__link">Details</button>
+          </li>
+           <!--3 Burger-->
+           <li class="burgers__component">
+            <h3 class="burgers__text">Pure Bacon</h3>
+            <img class="burgers__image"  src="./images/burger.png" alt="1/4 Pound Cheese" />
+            <button class="burgers__link">Details</button>
+          </li>
+        </ul>
+      </div>
+  
+      <button class="button">Order Now</button>
+    </section>
+
+    <!--Burgers ends-->
+
+    <!--Location begins-->
+    <section class="section location">
+      <div class="container">
+        <h2 class="location__title heading-two">Location</h2>
+        <p class="paragraph"><span class="paragraph--bold">Burger Factory</span>Pl. de la Riponne 10 1005 Lausanne 021 800 00 00</p>
+        <img class="location__map"  src="./images/map.jpg" alt="map">
+        <!-- <img class="location__pin" src="./images/map-pin.png" alt="map pin"> -->
+     
+      </div> 
+    </section>
+    <!--Location ends-->
+
+    <!--Footer begins-->
+    <footer class="footer">
+     <div class="container footer__wrap">
+      <a class="header__logo" href="./index.html">
+        <img class="header__logo--image"src="./images/logo.png" alt="logo" />
+      </a>
+        <p class="footer__address"><span class="footer__address--bold">Burger Factory</span></br></span>Pl. de la Riponne 10 1005</br>Lausanne</br>021 800 00 00</p>
+
+     </p>
+    </footer>
+    <!--Footer ends-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
