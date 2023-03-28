@@ -27,10 +27,10 @@
             <img class="header__logo--image"src="./images/logo.png" alt="logo" />
           </a>
           <ul class="header__menu">
-            <li class="header__menu--link"><a href="">Ingridient</a></li>
-            <li class="header__menu--link"><a href="">Story</a></li>
-            <li class="header__menu--link"><a href="">Burgers</a></li>
-            <li class="header__menu--link"><a href="">Location</a></li>
+            <li class="header__menu--link"><a href="#ingridient">Ingridient</a></li>
+            <li class="header__menu--link"><a href="#story">Story</a></li>
+            <li class="header__menu--link"><a href="#burgers">Burgers</a></li>
+            <li class="header__menu--link"><a href="#location">Location</a></li>
           </ul>
           <button class="header__button button button--hidden" type="button">Order Now</button>
         </nav>
@@ -39,19 +39,21 @@
     <!--Header ends-->
 
     <!--Hero begins-->
-    <section class="section hero">
+    <section  class="section hero">
      <div class="container hero__container">
         <div class="hero__content">
           <h1 class="hero__title heading-one">Burger Factory</h1>
           <p class="hero__text subtitle">Your dreamed burger close to your locations!</p>
-          <button class="button button--yellow">Discover the ingredients</button>
-         
-        </div> <img class="hero__image"  src="./images/hero-image.png" alt="burger" />
+          <button name="ingridient" class="button button--yellow">Discover the ingredients</button>
+          <a name="ingridient"></a>
+        </div> 
+        <img class="hero__image"  src="./images/hero-image.png" alt="burger" />
       
      </div></section>
     <!--Hero ends-->
 
     <!--Ingridients begins-->
+    <a name="ingridient"></a>
     <section class="section ingridients">
       <div class="container">
         <h2 class="ingridients__title heading-two">Ingredients</h2>
@@ -143,6 +145,7 @@
     <!--Ingridients ends-->
 
     <!--Story begins-->
+    <a name="story"></a>
     <article class="section story">
       <div class="container story__content">
         <img class="story__image" src="./images/story-image.jpg" alt="fast food" />
@@ -170,7 +173,7 @@
     <!--Story ends-->
 
     <!--Burgers begins-->
-    
+    <a name="burgers"></a>
     <section class="section burgers">
       <div class="container">
         <h1 class="burgers__title heading-two">Burgers</h1>
@@ -180,14 +183,31 @@
             <div class="burgers__element">
               <h3 class="burgers__text">1/4 Pound Cheese</h3>
               <img class="burgers__image"  src="./images/burger.png" alt="1/4 Pound Cheese" />
+            
+              <!--My Dropdown-->
+            <div class="dropdown">
+              <button class="dropdown__button">Details</button>
+              
+              <ul class="dropdown__menu">
+                <li class="dropdown__items">Ingredient</li>
+                <li class="dropdown__items">Lorem ipsum</li>
+                <li class="dropdown__items">Lorem ipsum</li>
+                <li class="dropdown__items">Lorem ipsum</li>
+              </ul>
             </div>
-            <button class="burgers__link">Details</button>
+            
+          </div>
+
+
+
+
           </li>
            <!--2 Burger-->
            <li class="burgers__component">
             <div class="burgers__element">
               <h3 class="burgers__text">Big Burger</h3>
               <img class="burgers__image"  src="./images/burger.png" alt="1/4 Pound Cheese" />
+            
             </div>
             <button class="burgers__link">Details</button>
           </li>
@@ -208,6 +228,7 @@
     <!--Burgers ends-->
 
     <!--Location begins-->
+    <a name="location"></a>
     <section class="section location">
       <div class="container">
         <h2 class="location__title heading-two">Location</h2>
@@ -232,5 +253,6 @@
     <!--Footer ends-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/js-dropdown.js"></script>
   </body>
 </html>

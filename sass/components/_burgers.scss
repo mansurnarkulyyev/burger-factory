@@ -1,3 +1,40 @@
+/*dropdown*/
+.dropdown{
+
+  &__menu {
+    display: none;
+  }
+
+  &__menu--visible {
+    display: block;
+    text-align: left;
+  }
+
+  &__button{
+    position: absolute;
+    top: 210;
+    right: 0;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: $buttonLink;
+    margin-left: auto;
+  }
+
+  &__items{
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  &__items:first-child{
+    font-weight: 700;
+  }
+}
+
+
 /*Media rule to 319px*/
 
 .burgers {
@@ -18,11 +55,15 @@
     @include desktop {
       display: flex;
       justify-content: center;
-     
     }
   }
 
+  &__element{
+    position: relative;
+  }
+
   &__component {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
