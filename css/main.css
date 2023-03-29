@@ -840,6 +840,10 @@ body {
   }
 }
 
+.location__wrap {
+  position: relative;
+}
+
 .location__map {
   border-radius: 30px;
   position: relative;
@@ -849,6 +853,32 @@ body {
   .location__map {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+.location__pin {
+  position: absolute;
+  top: 45px;
+  left: 95px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .location__pin {
+    top: 50px;
+    left: 275px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .location__pin {
+    top: 105px;
+    left: 440px;
+    width: 34px;
+    padding: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */

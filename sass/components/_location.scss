@@ -9,7 +9,12 @@
     }
   }
 
+  &__wrap{
+    position: relative;
+  }
+
   &__map {
+    
     border-radius: 30px;
     position: relative;
 
@@ -19,13 +24,25 @@
     }
   }
 
-  // &__pin{
-  //     position: absolute;
-  //     top: 1000px;
-  //     left: 120px;
-  //     background-color: $BgColorPrimary;
-  //     padding: 10px;
-  //     border-radius: 50%;
-  //     width: 50px;
-  // }
+  &__pin{
+      position: absolute;
+      top: 45px;
+      left: 95px;
+      background-color: $BgColorPrimary;
+      padding: 10px;
+      border-radius: 50%;
+      width: 50px;
+
+        @include tablet {
+          top: 50px;
+          left: 275px;
+        }
+
+        @include desktop {
+          top: 105px;
+          left: 440px;
+          width: 34px;
+          padding: 5px;
+        }
+  }
 }
