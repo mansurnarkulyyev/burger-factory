@@ -21,10 +21,10 @@
 .menu-container-flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
   padding: 40px;
   background-color: $BgColorPrimary;
+  padding-top: 80px;
 }
 
 .menu-button {
@@ -57,7 +57,7 @@
 .menu-container-pages {
   display: block;
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.11;
   color: var(--title-text-color);

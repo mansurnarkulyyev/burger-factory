@@ -56,6 +56,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     min-width: 768px;
@@ -188,12 +194,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 100vh;
   padding: 40px;
   background-color: #FFFFFF;
+  padding-top: 80px;
 }
 
 .menu-button {
@@ -226,7 +230,7 @@ body {
 .menu-container-pages {
   display: block;
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.11;
   color: var(--title-text-color);
@@ -411,11 +415,18 @@ body {
   background-color: #00B3FA;
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   color: #2A2A2A;
-  padding: 9px 25px;
+  padding: 15px 35px;
   border: none;
   border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 14px;
+    padding: 9px 25px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
