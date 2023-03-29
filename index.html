@@ -34,8 +34,33 @@
           </ul>
           <button class="header__button button button--hidden" type="button">Order Now</button>
 
-          <!--Hamburger menu-->
+          <!--Mobile menu begins-->
+          <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false">
+            <svg class="button-cross-icon" width="32" height="22" aria-label="Mobile menu switcher">
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-modal-cross"></use>
+            </svg>
+          </button>
+          <div class="menu-container" data-menu>
+            <div class="menu-container-flex">
+              <ul class="menu-container-items list">
           
+                <li><a class="menu-container-pages" href="./index.html">Ingredient</a></li>
+                <li><a class="menu-container-pages" href="">Story</a></li>
+                <li><a class="menu-container-pages" href="">Burgers</a></li>
+                <li><a class="menu-container-pages" href="">Location</a></li>
+          
+              </ul>
+          
+              <div>
+              <button class="header__button button button--hidden" type="button">Order Now</button>
+              </div>
+      
+            </div>
+          </div>
+          
+          <!--Mobile menu ends -->
+
         </nav>
       </div>
 
@@ -255,5 +280,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/js-dropdown.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
