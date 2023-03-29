@@ -33,6 +33,8 @@
   position: absolute;
   top: 24px;
   right: 16px;
+  background-color: transparent;
+  border: none;
 
   @include tablet{
       display: none;
