@@ -19,11 +19,11 @@ function onClick(index){
     dropdownContents[index].classList.remove("dropdown__menu--visible");
     dropdownButtons[index].textContent = "Details";
     dropdownButtons[index].style.top = 210;
-    burgersComponents[index].style.paddingBottom = 20;
+    // burgersComponents[index].style.paddingBottom = 20;
   } else {
     dropdownContents[index].classList.add("dropdown__menu--visible");
     dropdownButtons[index].style.top = 350;
     dropdownButtons[index].textContent = "Reduce";
-    burgersComponents[index].style.paddingBottom = 60;
+    // burgersComponents[index].style.paddingBottom = 60;
   }
 }

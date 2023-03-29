@@ -6,14 +6,23 @@
   }
 
   &__menu--visible {
+    position: absolute;
     display: block;
+    top: 90%;
     text-align: left;
+    background-color: $BgColorPrimary;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 5px 6px #00000029;
+    border-bottom-left-radius: 26px;;
+    border-bottom-right-radius: 26px;;
+    padding-bottom: 60px;
   }
 
   &__button{
+    z-index: 5;
     position: absolute;
-    top: 210;
-    right: 0;
+    right: 20px;
     margin-left: auto;
     background-color: transparent;
     border: none;
@@ -70,7 +79,7 @@
     width: 100%;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 26px;
-    padding: 20px;
+    padding-bottom: 30px;
     margin: 0 auto;
     margin-bottom: 30px;
 
