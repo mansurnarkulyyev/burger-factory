@@ -76,13 +76,64 @@
           <p class="hero__text subtitle">Your dreamed burger close to your locations!</p>
           <button name="ingridient" class="button button--yellow">Discover the ingredients</button>
         </div> 
-        <img class="hero__image"
-        srcset="./images/hero-image@2x.png 2x"  
-        src="./images/hero-image.png" 
-        alt="burger"
-        width ="625"
-        loading="lazy"
-        />
+
+
+
+        <picture class="hero__image">
+          <source
+            srcset="
+              /images/hero-image.png 1x,
+             /images/hero-image@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+            width="625"
+            height="646"
+          />
+
+          <source
+            srcset="
+              /images/hero-image-tablet.png 1x,
+              /images/hero-image-tablet@2x.png 2x,
+            "
+            media="(min-width: 768px)"
+            width="437"
+            height="451"
+          />
+
+          <source
+            srcset="
+              /images/hero-image-mobile.png 1x,
+              /images/hero-image-mobile@2x.png 2x,
+            "
+            media="(min-width: 320px)"
+            width="312"
+            height="322"
+          />
+
+          <source
+            srcset="
+              /images/hero-image-mobile.png 1x,
+              /images/hero-image-mobile@2x.png 2x,
+            "
+            media="(max-width: 319px)"
+            width="312"
+            height="322"
+          />
+        </picture>
+
+
+        
+
+      <picture class="hero__image">
+        <source 
+        srcset="/images/hero-image.png 1x, /images/hero-image@2x.png 2x" 
+        sizes="(min-width: 768px) 625px, 100vw" />
+        <img src="/images/hero-image.png" 
+        alt="burger" 
+        width="625" 
+        loading="lazy" />
+      </picture>
+
       
      </div></section>
     <!--Hero ends-->
