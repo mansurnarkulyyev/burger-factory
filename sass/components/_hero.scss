@@ -1,7 +1,7 @@
 /*Main styles*/
 .hero {
   text-align: center;
-  background-image: url(../images/background-blue.svg);
+  background-image: url(../images/background-blue.jpeg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,5 +72,27 @@
 
   to {
     transform: translateY(-30px);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 319px),
+screen and (min-resolution: 192dpi) and (max-width: 319px),
+screen and (min-resolution: 2dppx) and (max-width: 319px) {
+  .hero {
+    background-image: url(../images/background-blue@2x.jpeg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $mobile),
+screen and (min-resolution: 192dpi) and (min-width: $mobile),
+screen and (min-resolution: 2dppx) and (min-width: $mobile) {
+  .hero {
+    background-image: url(../images/background-blue@2x.jpeg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+screen and (min-resolution: 192dpi) and (min-width: $tablet),
+screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+  .hero {
+    background-image: url(../images/background-blue@2x.jpeg);
   }
 }
