@@ -362,16 +362,23 @@ body {
   font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
-}
-
-.header__menu--link :hover, .header__menu--link :focus {
-  color: #008BF6;
+  /*Animation*/
 }
 
 @media only screen and (min-width: 1024px) {
   .header__menu--link {
     font-size: 12px;
   }
+}
+
+.header__menu .header__menu--link {
+  color: #2A2A2A;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__menu .header__menu--link:hover, .header__menu .header__menu--link:focus {
+  color: #008BF6;
 }
 
 @media only screen and (min-width: 768px) {
@@ -454,6 +461,8 @@ body {
   padding: 15px 35px;
   border: none;
   border-radius: 5px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -488,6 +497,16 @@ body {
 
 .button--yellow {
   background-color: #F6E224;
+}
+
+.button:hover, .button:focus {
+  background-color: #008BF6;
+  color: #FFFFFF;
+}
+
+.button--yellow:hover, .button--yellow:focus {
+  background-color: orange;
+  color: #2A2A2A;
 }
 
 /*Media rule up to 319*/

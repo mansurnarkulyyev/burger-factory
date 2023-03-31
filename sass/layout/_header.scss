@@ -176,14 +176,22 @@
     font-weight: 700;
     
     &--link{
-      
-      :hover, :focus{
-        color: $buttonLink;
-      }
       @include desktop{
         font-size: 12px;
       }
     }
+
+/*Animation*/
+.header__menu--link{
+color: $fontPrimary;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__menu--link:hover, .header__menu--link:focus{
+color: $buttonLink;
+}
+
+
+  
 
     @include tablet {
       display: flex;
