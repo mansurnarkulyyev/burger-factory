@@ -908,6 +908,10 @@ body {
   padding-bottom: 30px;
   margin: 0 auto;
   margin-bottom: 30px;
+  -webkit-transition: margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -957,6 +961,13 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #008BF6;
+}
+
+.burgers__component:hover,
+.burgers__component:focus {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 6px #0000003c;
+          box-shadow: 0px 10px 6px #0000003c;
 }
 
 .paragraph__wrap {
