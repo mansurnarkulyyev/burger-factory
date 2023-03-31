@@ -1,3 +1,17 @@
+.paragraph{
+  &__wrap{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+  @include desktop{
+    gap: 20px;
+  }
+}
+}
+
 .location {
   text-align: center;
 
@@ -19,8 +33,11 @@
     position: relative;
 
     @include tablet {
-      width: 50%;
+      width: 61%;
       margin: 0 auto;
+    }
+    @include desktop {
+      width: 45%;
     }
   }
 

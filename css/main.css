@@ -930,6 +930,29 @@ body {
   color: #008BF6;
 }
 
+.paragraph__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .paragraph__wrap {
+    gap: 20px;
+  }
+}
+
 .location {
   text-align: center;
 }
@@ -955,8 +978,14 @@ body {
 
 @media only screen and (min-width: 768px) {
   .location__map {
-    width: 50%;
+    width: 61%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .location__map {
+    width: 45%;
   }
 }
 
