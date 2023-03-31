@@ -18,12 +18,12 @@ function onClick(index){
   if(dropdownContents[index].classList.contains("dropdown__menu--visible")){
     dropdownContents[index].classList.remove("dropdown__menu--visible");
     dropdownButtons[index].textContent = "Details";
-    dropdownButtons[index].style.top = 210;
+    dropdownButtons[index].style.top = "210px";
    
   } else {
     dropdownContents[index].classList.add("dropdown__menu--visible");
     dropdownButtons[index].textContent = "Reduce";
-    dropdownButtons[index].style.top = 350;
+    dropdownButtons[index].style.top = "350px";
    
   }
 }
