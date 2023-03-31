@@ -17,6 +17,10 @@
   &__image {
     border-radius: 30px;
     margin-bottom: 20px;
+    @include mobile {
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
 
     @include tablet {
       width: 50%;
@@ -28,6 +32,12 @@
     text-align: center;
     @include tablet {
       text-align: left;
+    }
+  }
+
+  &__composition{
+    @include tablet{
+      width: 350px;
     }
   }
   &__title {
