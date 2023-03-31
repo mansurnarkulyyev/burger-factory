@@ -858,6 +858,7 @@ body {
 
 .burgers__element {
   position: relative;
+  padding-top: 20px;
 }
 
 .burgers__component {
