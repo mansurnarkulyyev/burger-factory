@@ -22,8 +22,8 @@ function onClick(index){
    
   } else {
     dropdownContents[index].classList.add("dropdown__menu--visible");
-    dropdownButtons[index].style.top = 350;
     dropdownButtons[index].textContent = "Reduce";
+    dropdownButtons[index].style.top = 350;
    
   }
 }
