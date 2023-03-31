@@ -1,13 +1,3 @@
-/*Animation*/
-.hero__image {
-  animation: flying 2s ease-in-out infinite alternate;
-}
-
-@keyframes flying {
-  from { transform: translateY(0); }
-  to { transform: translateY(-30px); }
-}
-
 /*Main styles*/
 .hero {
   text-align: center;
@@ -67,5 +57,20 @@
         left: 600px;
       }
     }
+  }
+}
+
+/*Animation*/
+.hero__image {
+  animation: flying 2s ease-in-out infinite alternate;
+}
+
+@keyframes flying {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-30px);
   }
 }

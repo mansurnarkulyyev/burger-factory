@@ -520,34 +520,6 @@ body {
   color: #2A2A2A;
 }
 
-/*Animation*/
-.hero__image {
-  -webkit-animation: flying 2s ease-in-out infinite alternate;
-          animation: flying 2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes flying {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
-@keyframes flying {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-}
-
 /*Main styles*/
 .hero {
   text-align: center;
@@ -620,6 +592,34 @@ body {
     position: absolute;
     top: 0;
     left: 600px;
+  }
+}
+
+/*Animation*/
+.hero__image {
+  -webkit-animation: flying 2s ease-in-out infinite alternate;
+          animation: flying 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flying {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes flying {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 
