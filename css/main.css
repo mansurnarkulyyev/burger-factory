@@ -746,6 +746,7 @@ body {
 }
 
 .dropdown__menu--visible {
+  z-index: 5;
   position: absolute;
   display: block;
   top: 90%;
@@ -761,7 +762,7 @@ body {
 }
 
 .dropdown__button {
-  z-index: 5;
+  z-index: 7;
   position: absolute;
   right: 20px;
   margin-left: auto;
