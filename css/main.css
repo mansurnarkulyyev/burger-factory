@@ -509,7 +509,35 @@ body {
   color: #2A2A2A;
 }
 
-/*Media rule up to 319*/
+/*Animation*/
+.hero__image {
+  -webkit-animation: flying 2s ease-in-out infinite alternate;
+          animation: flying 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flying {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes flying {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+/*Main styles*/
 .hero {
   text-align: center;
   background-image: url(../images/background-blue.svg);
