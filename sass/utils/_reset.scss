@@ -1,3 +1,9 @@
+//soft transition for anchor elements
+html {
+  scroll-behavior: smooth;
+}
+
+//reset
 ul {
     list-style: none;
     padding: 0;

@@ -1,4 +1,8 @@
 /*Utils*/
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
   padding: 0;
