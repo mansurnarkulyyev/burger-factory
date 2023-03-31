@@ -15,12 +15,7 @@
   }
 
   &__image {
-    border-radius: 30px;
     margin-bottom: 20px;
-    @include mobile {
-      border-radius: 30px;
-      margin-bottom: 20px;
-    }
 
     @include tablet {
       width: 50%;
@@ -41,6 +36,7 @@
     }
   }
   &__title {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 
