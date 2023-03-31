@@ -79,15 +79,15 @@
 
 }
 
-// .no-scroll{
-//   overflow: hidden;
-// }
-// .mobile-container.is-open {
-//   display: block;
-//   opacity: 1;
-//   pointer-events: auto;
-//   visibility: visible;
-// }
+.no-scroll{
+  overflow: hidden;
+}
+.mobile-container.is-open {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
 .mobile-container {
   display: none;
 
