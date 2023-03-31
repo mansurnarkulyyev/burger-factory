@@ -215,13 +215,48 @@
     <!--Story begins-->
     <article class="section story" id="story">
       <div class="container story__content">
-        <img class="story__image" 
-        srcset="./images/story-image@2x.jpg 2x"
-        src="./images/story-image.jpg" 
-        alt="fast food" 
-        width="635"
-        loading="lazy"
-        />
+
+         <picture class="story__image">
+          <source
+            srcset="./images/story-image.jpeg 1x, ./images/story-image@2x.jpeg 2x"
+            media="(min-width: 1440px)"
+            width="625"
+            height="646"
+          />
+
+          <source
+            srcset="./images/story-image-tablet.jpeg 1x, ./images/story-image-tablet@2x.jpeg 2x"
+            media="(min-width: 768px)"
+            width="444"
+            height="308"
+          
+          />
+
+          <source
+            srcset="./images/story-image-mobile.jpeg 1x, ./images/story-image-mobile@2x.jpeg 2x,"
+            media="(max-width: 319px)"
+            width="317"
+            height="220"
+            
+          />
+
+          <source
+            srcset="./images/story-image-mobile.jpeg 1x, ./images/story-image-mobile@2x.jpeg 2x,"
+            media="(max-width: 319px)"
+            width="317"
+            height="220"
+          />
+
+          <img 
+          src="./images/story-image.jpg" 
+          alt="fast food" 
+          width="635"
+          loading="lazy"
+          />
+
+        </picture>
+
+        
         <div class="story__composition">
         <h2 class="story__title heading-two">The story</h2>
         
