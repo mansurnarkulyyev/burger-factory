@@ -319,6 +319,47 @@
     <article class="section story" id="story">
       <div class="container story__content">
         <picture class="story__image">
+          <!--WebP-->
+          <source
+            srcset="
+              ./images/story-image-desktop.webp    1x,
+              ./images/story-image-desktop-2x.webp 2x
+            "
+            media="(min-width: 1440px)"
+            width="625"
+            height="646"
+          />
+
+          <source
+            srcset="
+              ./images/story-image-tablet.webp    1x,
+              ./images/story-image-tablet-2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            width="444"
+            height="308"
+          />
+
+          <source
+            srcset="
+              ./images/story-image-mobile.webp    1x,
+              ./images/story-image-mobile-2x.webp 2x
+            "
+            media="(max-width: 319px)"
+            width="317"
+            height="220"
+          />
+
+          <source
+            srcset="
+              ./images/story-image-mobile.webp    1x,
+              ./images/story-image-mobile-2x.webp 2x
+            "
+            media="(max-width: 319px)"
+            width="317"
+            height="220"
+          />
+          <!--Bitmap-->
           <source
             srcset="
               ./images/story-image-desktop.png    1x,
