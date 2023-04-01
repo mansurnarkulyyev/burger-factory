@@ -307,14 +307,23 @@
             <!--Cheese-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img
-                  class="ingridients__image"
-                  srcset="./images/cheese@2x.png 2x"
-                  src="./images/cheese.png"
-                  alt="cheese"
-                  width="137"
-                  loading="lazy"
-                />
+                <picture>
+                  <source
+                    srcset="./images/cheese.webp 1x, ./images/cheese@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    width="138"
+                    height="149"
+                  />
+                  <img
+                    class="ingridients__image"
+                    srcset="./images/cheese@2x.jpeg 2x"
+                    src="./images/cheese.jpeg"
+                    alt="cheese"
+                    width="137"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="ingridients__text">cheese</p>
               </div>
             </div>
