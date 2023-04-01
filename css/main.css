@@ -801,6 +801,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .story__composition {
+    width: 450px;
+  }
+}
+
 .story__title {
   margin-top: 20px;
   margin-bottom: 10px;

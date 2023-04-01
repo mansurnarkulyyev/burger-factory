@@ -35,6 +35,9 @@
     @include tablet{
       width: 350px;
     }
+    @include tablet{
+      width: 450px;
+    }
   }
   &__title {
     margin-top: 20px;
