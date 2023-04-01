@@ -243,8 +243,8 @@
                     srcset="./images/buns.webp 1x, ./images/buns@2x.webp 2x"
                     type="image/webp"
                     media="(min-width: 1440px)"
-                    width="625"
-                    height="646"
+                    width="194"
+                    height="180"
                   />
                   <img
                     class="ingridients__image"
@@ -261,14 +261,23 @@
             <!--Salad-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img
-                  class="ingridients__image"
-                  srcset="./images/salad@2x.png 2x"
-                  src="./images/salad.png"
-                  alt="salad"
-                  width="152"
-                  loading="lazy"
-                />
+                <picture>
+                  <source
+                    srcset="./images/salad.webp 1x, ./images/salad2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    width="152"
+                    height="152"
+                  />
+                  <img
+                    class="ingridients__image"
+                    srcset="./images/salad2x.jpeg 2x"
+                    src="./images/salad.jpeg"
+                    alt="salad"
+                    width="152"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="ingridients__text">salad</p>
               </div>
             </div>
