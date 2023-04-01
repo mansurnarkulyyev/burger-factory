@@ -656,13 +656,99 @@
           <p class="paragraph">021 800 00 00</p>
         </div>
         <div class="location__wrap">
-          <img
-            class="location__map"
-            srcset="./images/map@2x.jpg 2x"
-            src="./images/map.jpg"
-            alt="map"
-          />
+          <picture>
+            <!--webP-->
+            <source
+              srcset="
+                ./images/map-desktop.webp    1x,
+                ./images/map-desktop@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1440px)"
+              width="860"
+              height="483"
+            />
 
+            <source
+              srcset="
+                ./images/map-tablet.webp    1x,
+                ./images/map-tablet@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+              width="602"
+              height="338"
+            />
+
+            <source
+              srcset="
+                ./images/map-mobile.webp    1x,
+                ./images/map-mobile@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 319px)"
+              width="430"
+              height="241"
+            />
+
+            <source
+              srcset="
+                ./images/map-mobile.webp    1x,
+                ./images/map-mobile@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 319px)"
+              width="430"
+              height="241"
+            />
+            <!--Bitmap-->
+            <source
+              srcset="
+                ./images/map-desktop.jpeg    1x,
+                ./images/map-desktop@2x.jpeg 2x
+              "
+              media="(min-width: 1440px)"
+              width="860"
+              height="483"
+            />
+
+            <source
+              srcset="
+                ./images/map-tablet.jpeg    1x,
+                ./images/map-tablet@2x.jpeg 2x
+              "
+              media="(min-width: 768px)"
+              width="602"
+              height="338"
+            />
+
+            <source
+              srcset="
+                ./images/map-mobile.jpeg    1x,
+                ./images/map-mobile@2x.jpeg 2x
+              "
+              media="(max-width: 319px)"
+              width="430"
+              height="241"
+            />
+
+            <source
+              srcset="
+                ./images/map-mobile.jpeg    1x,
+                ./images/map-mobile@2x.jpeg 2x
+              "
+              media="(max-width: 319px)"
+              width="430"
+              height="241"
+            />
+
+            <img
+              class="location__map"
+              srcset="./images/map@2x.jpg 2x"
+              src="./images/map.jpg"
+              alt="map"
+            />
+          </picture>
           <img
             class="location__pin"
             srcset="./images/map-pin@2x.png 2x"
