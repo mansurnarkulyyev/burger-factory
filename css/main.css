@@ -756,6 +756,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
