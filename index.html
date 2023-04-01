@@ -313,14 +313,14 @@
                     type="image/webp"
                     media="(min-width: 1440px)"
                     width="138"
-                    height="149"
+                    height="140"
                   />
                   <img
                     class="ingridients__image"
                     srcset="./images/cheese@2x.jpeg 2x"
                     src="./images/cheese.jpeg"
                     alt="cheese"
-                    width="137"
+                    width="138"
                     loading="lazy"
                   />
                 </picture>
@@ -330,14 +330,23 @@
             <!--Bacon-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img
-                  class="ingridients__image"
-                  srcset="./images/bacon@2x.png 2x"
-                  src="./images/bacon.png"
-                  alt="bacon"
-                  width="138"
-                  loading="lazy"
-                />
+                <picture>
+                  <source
+                    srcset="./images/bacon.webp 1x, ./images/bacon@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    width="138"
+                    height="146"
+                  />
+                  <img
+                    class="ingridients__image"
+                    srcset="./images/bacon@2x.jpeg 2x"
+                    src="./images/bacon.jpeg"
+                    alt="bacon"
+                    width="138"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="ingridients__text">bacon</p>
               </div>
             </div>
