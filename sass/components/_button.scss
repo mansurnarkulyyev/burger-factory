@@ -9,14 +9,14 @@
   border: none;
   border-radius: 5px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @include tablet{
+  @include tablet {
     font-size: 14px;
     padding: 9px 25px;
   }
 
-  @include desktop{
+  @include desktop {
     font-size: 12px;
     padding: 6px 18px;
   }
@@ -37,12 +37,14 @@
   }
 }
 
-.button:hover, .button:focus{
-  background-color: #008BF6;
+.button:hover,
+.button:focus {
+  background-color: #008bf6;
   color: $BgColorPrimary;
 }
 
-.button--yellow:hover, .button--yellow:focus{
+.button--yellow:hover,
+.button--yellow:focus {
   background-color: orange;
   color: $fontPrimary;
 }

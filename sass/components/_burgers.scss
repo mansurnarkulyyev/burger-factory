@@ -1,6 +1,5 @@
 /*dropdown*/
-.dropdown{
-
+.dropdown {
   &__menu {
     display: none;
   }
@@ -15,15 +14,15 @@
     width: 100%;
     padding: 20px;
     box-shadow: 0px 5px 6px #00000029;
-    border-bottom-left-radius: 26px;;
-    border-bottom-right-radius: 26px;;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
     padding-bottom: 60px;
   }
 
-  &__button{
+  &__button {
     z-index: 7;
     position: absolute;
-    top:210;
+    top: 210;
     right: 20px;
     margin-left: auto;
     background-color: transparent;
@@ -35,16 +34,15 @@
     margin-left: auto;
   }
 
-  &__items{
+  &__items {
     font-size: 14px;
     line-height: 2;
   }
 
-  &__items:first-child{
+  &__items:first-child {
     font-weight: 700;
   }
 }
-
 
 /*Media rule to 319px*/
 
@@ -69,7 +67,7 @@
     }
   }
 
-  &__element{
+  &__element {
     position: relative;
     padding-top: 20px;
   }
@@ -85,9 +83,9 @@
     margin: 0 auto;
     margin-bottom: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include desktop{
+    @include desktop {
       margin: 0;
       margin-bottom: 30px;
       width: 100%;
@@ -104,11 +102,11 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
-    @include tablet{
+    @include tablet {
       width: 120px;
     }
 
-    @include desktop{
+    @include desktop {
       width: 140px;
     }
   }
@@ -133,7 +131,7 @@
 }
 
 .burgers__component:hover,
-.burgers__component:focus{
+.burgers__component:focus {
   margin-bottom: 20px;
   box-shadow: 0px 10px 6px #0000003c;
 }

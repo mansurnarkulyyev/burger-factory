@@ -1,6 +1,5 @@
 .ingridients {
-
-  @include desktop{
+  @include desktop {
     margin-top: 120px;
   }
   text-align: center;
@@ -16,8 +15,8 @@
     }
   }
 
-  &__paragraph{
-    @include tablet{
+  &__paragraph {
+    @include tablet {
       width: 470px;
       margin: 0 auto;
     }
@@ -68,7 +67,7 @@
       display: block;
       object-fit: cover;
 
-      @include desktop{
+      @include desktop {
         width: 120px;
       }
     }

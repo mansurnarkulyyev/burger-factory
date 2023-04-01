@@ -1,11 +1,11 @@
 // Dropdown button
-const dropdownButtons = document.querySelectorAll('button.dropdown__button');
+const dropdownButtons = document.querySelectorAll("button.dropdown__button");
 
 // Dropdown list
-const dropdownContents = document.querySelectorAll('ul.dropdown__menu');
+const dropdownContents = document.querySelectorAll("ul.dropdown__menu");
 
 // .burgers__component
-const burgersComponents = document.querySelectorAll('li.burgers__component');
+const burgersComponents = document.querySelectorAll("li.burgers__component");
 
 // Event Listener
 dropdownButtons.forEach((button, index) => {
@@ -13,17 +13,14 @@ dropdownButtons.forEach((button, index) => {
 });
 
 // Function
-function onClick(index){
-
-  if(dropdownContents[index].classList.contains("dropdown__menu--visible")){
+function onClick(index) {
+  if (dropdownContents[index].classList.contains("dropdown__menu--visible")) {
     dropdownContents[index].classList.remove("dropdown__menu--visible");
     dropdownButtons[index].textContent = "Details";
     dropdownButtons[index].style.top = "210px";
-   
   } else {
     dropdownContents[index].classList.add("dropdown__menu--visible");
     dropdownButtons[index].textContent = "Reduce";
     dropdownButtons[index].style.top = "350px";
-   
   }
 }

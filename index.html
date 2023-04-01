@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -25,110 +25,154 @@
       <div class="container header__container">
         <nav class="header__navigation">
           <a class="header__logo" href="./index.html">
-            <img class="header__logo--image"
-            srcset="./images/logo@2x.png 2x"
-            src="./images/logo.png" 
-            alt="logo"
-            width="208"
-            loading="lazy" 
+            <img
+              class="header__logo--image"
+              srcset="./images/logo@2x.png 2x"
+              src="./images/logo.png"
+              alt="logo"
+              width="208"
+              loading="lazy"
             />
           </a>
           <ul class="header__menu">
-            <li class="header__menu--link"><a href="#ingredients">Ingridient</a></li>
+            <li class="header__menu--link">
+              <a href="#ingredients">Ingridient</a>
+            </li>
             <li class="header__menu--link"><a href="#story">Story</a></li>
             <li class="header__menu--link"><a href="#burgers">Burgers</a></li>
             <li class="header__menu--link"><a href="#location">Location</a></li>
           </ul>
-          <button data-target="#ingridients" class="header__button button button--hidden" type="button">Order Now</button>
+          <button
+            data-target="#ingridients"
+            class="header__button button button--hidden"
+            type="button"
+          >
+            Order Now
+          </button>
 
           <!--Mobile menu begins-->
 
-          <button class="mobile-menu is-open" data-menu-button aria-expanded="false" type="button">
-            <svg class="mobile-menu-icon" width="32" height="32" aria-label="кнопка меню">
-              <use class="mobile-menu-open" href="./images/icons.svg#icon-menu"></use>
-              <use class="mobile-menu-close" href="./images/icons.svg#icon-modal-cross"></use>
+          <button
+            class="mobile-menu is-open"
+            data-menu-button
+            aria-expanded="false"
+            type="button"
+          >
+            <svg
+              class="mobile-menu-icon"
+              width="32"
+              height="32"
+              aria-label="кнопка меню"
+            >
+              <use
+                class="mobile-menu-open"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+              <use
+                class="mobile-menu-close"
+                href="./images/icons.svg#icon-modal-cross"
+              ></use>
             </svg>
           </button>
 
-  <div class="mobile-container" data-menu>
-    <div class="mobile-modal">
-      <ul class="mobile-list">
-        <li class="mobile-item"><a class="mobile-link mobile-link-active" href="#ingridients">Ingredient</a></li>
-        <li class="mobile-item"><a class="mobile-link" href="#story">Story</a></li>
-        <li class="mobile-item"><a class="mobile-link" href="#burgers">Burgers</a></li>
-        <li class="mobile-item"><a class="mobile-link" href="#location">Location</a></li>
-      </ul>
-      <button class="header__button button" type="button">Order Now</button> 
-    </div>
-  </div>
+          <div class="mobile-container" data-menu>
+            <div class="mobile-modal">
+              <ul class="mobile-list">
+                <li class="mobile-item">
+                  <a class="mobile-link mobile-link-active" href="#ingridients"
+                    >Ingredient</a
+                  >
+                </li>
+                <li class="mobile-item">
+                  <a class="mobile-link" href="#story">Story</a>
+                </li>
+                <li class="mobile-item">
+                  <a class="mobile-link" href="#burgers">Burgers</a>
+                </li>
+                <li class="mobile-item">
+                  <a class="mobile-link" href="#location">Location</a>
+                </li>
+              </ul>
+              <button class="header__button button" type="button">
+                Order Now
+              </button>
+            </div>
+          </div>
           <!--Mobile menu ends -->
         </nav>
       </div>
-
     </header>
     <!--Header ends-->
 
     <!--Hero begins-->
-    <section  class="section hero">
-     <div class="container hero__container">
+    <section class="section hero">
+      <div class="container hero__container">
         <div class="hero__content">
           <h1 class="hero__title heading-one">Burger Factory</h1>
-          <p class="hero__text subtitle">Your dreamed burger close to your locations!</p>
-          <a href="#ingredients" class="button button--yellow">Discover the ingredients</a>
-        </div> 
+          <p class="hero__text subtitle">
+            Your dreamed burger close to your locations!
+          </p>
+          <a href="#ingredients" class="button button--yellow"
+            >Discover the ingredients</a
+          >
+        </div>
 
         <picture class="hero__image">
           <source
-            srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png 2x
-            "
+            srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png 2x"
             media="(min-width: 1440px)"
             width="625"
             height="646"
           />
 
           <source
-            srcset="./images/hero-image-tablet.png 1x, ./images/hero-image-tablet@2x.png 2x
+            srcset="
+              ./images/hero-image-tablet.png    1x,
+              ./images/hero-image-tablet@2x.png 2x
             "
             media="(min-width: 768px)"
             width="437"
             height="451"
-          
           />
 
           <source
-            srcset="./images/hero-image-mobile.png 1x, ./images/hero-image-mobile@2x.png 2x
+            srcset="
+              ./images/hero-image-mobile.png    1x,
+              ./images/hero-image-mobile@2x.png 2x
             "
             media="(min-width: 320px)"
             width="312"
             height="322"
-            
           />
 
           <source
-            srcset="./images/hero-image-mobile.png 1x, ./images/hero-image-mobile@2x.png 2x"
+            srcset="
+              ./images/hero-image-mobile.png    1x,
+              ./images/hero-image-mobile@2x.png 2x
+            "
             media="(max-width: 319px)"
             width="312"
             height="322"
           />
 
-          <img src="./images/hero-image.png" 
-          alt="burger" 
-          width="625" 
-          loading="lazy" 
+          <img
+            src="./images/hero-image.png"
+            alt="burger"
+            width="625"
+            loading="lazy"
           />
         </picture>
-      
-     </div>
+      </div>
     </section>
     <!--Hero ends-->
 
     <!--Ingredients begins-->
-    <section id="ingredients" class="section ingridients" >
+    <section id="ingredients" class="section ingridients">
       <div class="container">
         <h2 class="ingridients__title heading-two">Ingredients</h2>
         <p class="ingridients__subtitle subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id
-          arcu vel maximus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
+          id arcu vel maximus.
         </p>
 
         <!--Slider begins-->
@@ -137,38 +181,41 @@
             <!--Buns-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img class="ingridients__image"
-                srcset="./images/buns@2x.png 2x" 
-                src="./images/buns.png" 
-                alt="buns"
-                width = "194" 
-                loading="lazy"
+                <img
+                  class="ingridients__image"
+                  srcset="./images/buns@2x.png 2x"
+                  src="./images/buns.png"
+                  alt="buns"
+                  width="194"
+                  loading="lazy"
                 />
                 <p class="ingridients__text">buns</p>
               </div>
             </div>
-             <!--Salad-->
-            <div class="swiper-slide">
-             <div class="swiper-component">
-                <img class="ingridients__image"
-                srcset ="./images/salad@2x.png 2x" 
-                src ="./images/salad.png" 
-                alt ="salad"
-                width ="152"
-                loading="lazy"
-                />
-                <p class="ingridients__text">salad</p>
-             </div>
-            </div>
-             <!--Tomato-->
+            <!--Salad-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img class="ingridients__image"
-                srcset="./images/tomato@2x.png 2x"
-                src="./images/tomato.png" 
-                alt="tomato"
-                width="138" 
-                loading="lazy"
+                <img
+                  class="ingridients__image"
+                  srcset="./images/salad@2x.png 2x"
+                  src="./images/salad.png"
+                  alt="salad"
+                  width="152"
+                  loading="lazy"
+                />
+                <p class="ingridients__text">salad</p>
+              </div>
+            </div>
+            <!--Tomato-->
+            <div class="swiper-slide">
+              <div class="swiper-component">
+                <img
+                  class="ingridients__image"
+                  srcset="./images/tomato@2x.png 2x"
+                  src="./images/tomato.png"
+                  alt="tomato"
+                  width="138"
+                  loading="lazy"
                 />
                 <p class="ingridients__text">tomato</p>
               </div>
@@ -176,25 +223,27 @@
             <!--Cheese-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img class="ingridients__image"
-                srcset="./images/cheese@2x.png 2x" 
-                src="./images/cheese.png" 
-                alt="cheese" 
-                width="137"
-                loading="lazy"
+                <img
+                  class="ingridients__image"
+                  srcset="./images/cheese@2x.png 2x"
+                  src="./images/cheese.png"
+                  alt="cheese"
+                  width="137"
+                  loading="lazy"
                 />
                 <p class="ingridients__text">cheese</p>
               </div>
             </div>
-             <!--Bacon-->
+            <!--Bacon-->
             <div class="swiper-slide">
               <div class="swiper-component">
-                <img class="ingridients__image"
-                srcset="./images/bacon@2x.png 2x" 
-                src="./images/bacon.png" 
-                alt="bacon"
-                width="138"
-                loading="lazy"
+                <img
+                  class="ingridients__image"
+                  srcset="./images/bacon@2x.png 2x"
+                  src="./images/bacon.png"
+                  alt="bacon"
+                  width="138"
+                  loading="lazy"
                 />
                 <p class="ingridients__text">bacon</p>
               </div>
@@ -203,80 +252,94 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <p class=" ingridients__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non commodo elit. Integer risus orci, ultricies ac dapibus sed, dignissim interdum quam. Proin quis dignissim diam. Donec id magna placerat, fringilla odio et, efficitur lacus. Vivamus eu ultricies erat, eu lobortis nunc. Sed nec dignissim libero. Integer cursus leo nunc. Nulla mattis interdum nunc, sed semper turpis. Cras elit lorem, mollis ut feugiat ac, ultricies eu dolor.</p>
-      
+        <p class="ingridients__paragraph paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
+          consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue,
+          non commodo elit. Integer risus orci, ultricies ac dapibus sed,
+          dignissim interdum quam. Proin quis dignissim diam. Donec id magna
+          placerat, fringilla odio et, efficitur lacus. Vivamus eu ultricies
+          erat, eu lobortis nunc. Sed nec dignissim libero. Integer cursus leo
+          nunc. Nulla mattis interdum nunc, sed semper turpis. Cras elit lorem,
+          mollis ut feugiat ac, ultricies eu dolor.
+        </p>
+
         <!--Slider ends-->
-        </div>
-        
+      </div>
     </section>
     <!--Ingridients ends-->
 
     <!--Story begins-->
     <article class="section story" id="story">
       <div class="container story__content">
-
-         <picture class="story__image">
+        <picture class="story__image">
           <source
-            srcset="./images/story-image-desktop.png 1x, ./images/story-image-desktop@2x.png 2x"
+            srcset="
+              ./images/story-image-desktop.png    1x,
+              ./images/story-image-desktop@2x.png 2x
+            "
             media="(min-width: 1440px)"
             width="625"
             height="646"
           />
 
           <source
-            srcset="./images/story-image-tablet.png 1x, ./images/story-image-tablet@2x.png 2x"
+            srcset="
+              ./images/story-image-tablet.png    1x,
+              ./images/story-image-tablet@2x.png 2x
+            "
             media="(min-width: 768px)"
             width="444"
             height="308"
-          
           />
 
           <source
-            srcset="./images/story-image-mobile.png 1x, ./images/story-image-mobile@2x.png 2x"
-            media="(max-width: 319px)"
-            width="317"
-            height="220"
-            
-          />
-
-          <source
-            srcset="./images/story-image-mobile.png 1x, ./images/story-image-mobile@2x.png 2x"
+            srcset="
+              ./images/story-image-mobile.png    1x,
+              ./images/story-image-mobile@2x.png 2x
+            "
             media="(max-width: 319px)"
             width="317"
             height="220"
           />
 
-          <img 
-          src="./images/story-image-mobile.png" 
-          alt="fast food" 
-          width="635"
-          loading="lazy"
+          <source
+            srcset="
+              ./images/story-image-mobile.png    1x,
+              ./images/story-image-mobile@2x.png 2x
+            "
+            media="(max-width: 319px)"
+            width="317"
+            height="220"
           />
 
+          <img
+            src="./images/story-image-mobile.png"
+            alt="fast food"
+            width="635"
+            loading="lazy"
+          />
         </picture>
 
-        
         <div class="story__composition">
-        <h2 class="story__title heading-two">The story</h2>
-        
-        
+          <h2 class="story__title heading-two">The story</h2>
+
           <p class="story__subtitle subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id
-            arcu vel maximus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            mollis id arcu vel maximus.
           </p>
           <p class="story__text paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget
-            consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue, non
-            commodo elit. Integer risus orci, ultricies ac dapibus sed, dignissim
-            interdum quam. Proin quis dignissim diam. Donec id magna placerat,
-            fringilla odio et, efficitur lacus. Vivamus eu ultricies erat, eu
-            lobortis nunc. Sed nec dignissim libero. Integer cursus leo nunc. Nulla
-            mattis interdum nunc, sed semper turpis. Cras elit lorem, mollis ut
-            feugiat ac, ultricies eu dolor.
+            consequat lorem. Ut nec placerat purus. Fusce vitae faucibus augue,
+            non commodo elit. Integer risus orci, ultricies ac dapibus sed,
+            dignissim interdum quam. Proin quis dignissim diam. Donec id magna
+            placerat, fringilla odio et, efficitur lacus. Vivamus eu ultricies
+            erat, eu lobortis nunc. Sed nec dignissim libero. Integer cursus leo
+            nunc. Nulla mattis interdum nunc, sed semper turpis. Cras elit
+            lorem, mollis ut feugiat ac, ultricies eu dolor.
           </p>
         </div>
-      
-      </div></article>
+      </div>
+    </article>
     <!--Story ends-->
 
     <!--Burgers begins-->
@@ -289,117 +352,127 @@
             <div class="burgers__element">
               <h3 class="burgers__text">1/4 Pound Cheese</h3>
 
-               <picture>
-          <source
-            srcset="./images/burger-desktop.jpeg 1x, ./images/burger-desktop@2x.jpeg 2x"
-            media="(min-width: 1440px)"
-            width="220"
-            height="207"
-          />
+              <picture>
+                <source
+                  srcset="
+                    ./images/burger-desktop.jpeg    1x,
+                    ./images/burger-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width: 1440px)"
+                  width="220"
+                  height="207"
+                />
 
-          <source
-            srcset="./images/burger-tablet.jpeg 1x, ./images/burger-tablet@2x.jpeg 2x"
-            media="(min-width: 768px)"
-            width="154"
-            height="144"
-          
-          />
+                <source
+                  srcset="
+                    ./images/burger-tablet.jpeg    1x,
+                    ./images/burger-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="154"
+                  height="144"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-            
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          
-          <img class="burgers__image"  
-              src="./images/burger-mobile.jpeg" 
-              alt="1/4 Pound Cheese"
-              width="220" 
-              loading="lazy"
-              />
+                <img
+                  class="burgers__image"
+                  src="./images/burger-mobile.jpeg"
+                  alt="1/4 Pound Cheese"
+                  width="220"
+                  loading="lazy"
+                />
+              </picture>
 
-               </picture>
-
-              
-            
               <!--My Dropdown-->
-            <div class="dropdown">
-              <button class="dropdown__button">Details</button>
-              
-              <ul class="dropdown__menu">
-                <li class="dropdown__items">Ingredient</li>
-                <li class="dropdown__items">Lorem ipsum</li>
-                <li class="dropdown__items">Lorem ipsum</li>
-                <li class="dropdown__items">Lorem ipsum</li>
-              </ul>
+              <div class="dropdown">
+                <button class="dropdown__button">Details</button>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__items">Ingredient</li>
+                  <li class="dropdown__items">Lorem ipsum</li>
+                  <li class="dropdown__items">Lorem ipsum</li>
+                  <li class="dropdown__items">Lorem ipsum</li>
+                </ul>
+              </div>
             </div>
-            
-          </div>
-
-
-
-
           </li>
-           <!--2 Burger-->
+          <!--2 Burger-->
           <li class="burgers__component">
             <div class="burgers__element">
               <h3 class="burgers__text">Big Burger</h3>
               <picture>
-          <source
-            srcset="./images/burger-desktop.jpeg 1x, ./images/burger-desktop@2x.jpeg 2x"
-            media="(min-width: 1440px)"
-            width="220"
-            height="207"
-          />
+                <source
+                  srcset="
+                    ./images/burger-desktop.jpeg    1x,
+                    ./images/burger-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width: 1440px)"
+                  width="220"
+                  height="207"
+                />
 
-          <source
-            srcset="./images/burger-tablet.jpeg 1x, ./images/burger-tablet@2x.jpeg 2x"
-            media="(min-width: 768px)"
-            width="154"
-            height="144"
-          
-          />
+                <source
+                  srcset="
+                    ./images/burger-tablet.jpeg    1x,
+                    ./images/burger-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="154"
+                  height="144"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-            
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          
-          <img class="burgers__image"  
-              src="./images/burger-mobile.jpeg" 
-              alt="Big Burger"
-              width="220" 
-              loading="lazy"
-              />
+                <img
+                  class="burgers__image"
+                  src="./images/burger-mobile.jpeg"
+                  alt="Big Burger"
+                  width="220"
+                  loading="lazy"
+                />
+              </picture>
 
-               </picture>
-             
-          
               <!--My Dropdown-->
               <div class="dropdown">
                 <button class="dropdown__button">Details</button>
-          
+
                 <ul class="dropdown__menu">
                   <li class="dropdown__items">Ingredient</li>
                   <li class="dropdown__items">Lorem ipsum</li>
@@ -407,60 +480,66 @@
                   <li class="dropdown__items">Lorem ipsum</li>
                 </ul>
               </div>
-          
             </div>
-     
           </li>
-           <!--3 Burger-->
+          <!--3 Burger-->
           <li class="burgers__component">
             <div class="burgers__element">
               <h3 class="burgers__text">Pure Bacon</h3>
-                <picture>
-          <source
-            srcset="./images/burger-desktop.jpeg 1x, ./images/burger-desktop@2x.jpeg 2x"
-            media="(min-width: 1440px)"
-            width="220"
-            height="207"
-          />
+              <picture>
+                <source
+                  srcset="
+                    ./images/burger-desktop.jpeg    1x,
+                    ./images/burger-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width: 1440px)"
+                  width="220"
+                  height="207"
+                />
 
-          <source
-            srcset="./images/burger-tablet.jpeg 1x, ./images/burger-tablet@2x.jpeg 2x"
-            media="(min-width: 768px)"
-            width="154"
-            height="144"
-          
-          />
+                <source
+                  srcset="
+                    ./images/burger-tablet.jpeg    1x,
+                    ./images/burger-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="154"
+                  height="144"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-            
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          <source
-            srcset="./images/burger-mobile.jpeg 1x, ./images/burger-mobile@2x.jpeg 2x"
-            media="(max-width: 319px)"
-            width="110"
-            height="103"
-          />
+                <source
+                  srcset="
+                    ./images/burger-mobile.jpeg    1x,
+                    ./images/burger-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width: 319px)"
+                  width="110"
+                  height="103"
+                />
 
-          
-          <img class="burgers__image"  
-              src="./images/burger-mobile.jpeg" 
-              alt="Pure Baco"
-              width="220" 
-              loading="lazy"
-              />
+                <img
+                  class="burgers__image"
+                  src="./images/burger-mobile.jpeg"
+                  alt="Pure Baco"
+                  width="220"
+                  loading="lazy"
+                />
+              </picture>
 
-               </picture>
-              
-          
               <!--My Dropdown-->
               <div class="dropdown">
                 <button class="dropdown__button">Details</button>
-          
+
                 <ul class="dropdown__menu">
                   <li class="dropdown__items">Ingredient</li>
                   <li class="dropdown__items">Lorem ipsum</li>
@@ -468,13 +547,11 @@
                   <li class="dropdown__items">Lorem ipsum</li>
                 </ul>
               </div>
-          
             </div>
-            
           </li>
         </ul>
       </div>
-  
+
       <button class="button">Order Now</button>
     </section>
 
@@ -486,44 +563,48 @@
         <h2 class="location__title heading-two">Location</h2>
         <div class="paragraph__wrap">
           <p class="paragraph paragraph--bold">Burger Factory</p>
-          <p class="paragraph">Pl. de la Riponne 10</p> 
+          <p class="paragraph">Pl. de la Riponne 10</p>
           <p class="paragraph">1005 Lausanne</p>
           <p class="paragraph">021 800 00 00</p>
         </div>
         <div class="location__wrap">
+          <img
+            class="location__map"
+            srcset="./images/map@2x.jpg 2x"
+            src="./images/map.jpg"
+            alt="map"
+          />
 
-        <img class="location__map"  
-        srcset="./images/map@2x.jpg 2x"
-        src="./images/map.jpg" 
-        alt="map"
-        />
-
-        <img class="location__pin"
-        srcset="./images/map-pin@2x.png 2x" 
-        src="./images/map-pin.png" 
-        alt="map pin"
-        loading="lazy"
-        />
-        
+          <img
+            class="location__pin"
+            srcset="./images/map-pin@2x.png 2x"
+            src="./images/map-pin.png"
+            alt="map pin"
+            loading="lazy"
+          />
         </div>
-      </div> 
+      </div>
     </section>
     <!--Location ends-->
 
     <!--Footer begins-->
     <footer class="footer">
-     <div class="container footer__wrap">
-      <a class="header__logo" href="./index.html">
-        <img class="header__logo--image"
-        srcset="./images/logo@2x.png 2x"
-        src="./images/logo.png" 
-        alt="logo" 
-        width="208" 
-        loading="lazy" 
-        />
-      </a>
-        <p class="footer__address"><span class="footer__address--bold">Burger Factory<br></span>Pl. de la Riponne 10 1005<br>Lausanne<br>021 800 00 00</p>
-     </div>
+      <div class="container footer__wrap">
+        <a class="header__logo" href="./index.html">
+          <img
+            class="header__logo--image"
+            srcset="./images/logo@2x.png 2x"
+            src="./images/logo.png"
+            alt="logo"
+            width="208"
+            loading="lazy"
+          />
+        </a>
+        <p class="footer__address">
+          <span class="footer__address--bold">Burger Factory<br /></span>Pl. de
+          la Riponne 10 1005<br />Lausanne<br />021 800 00 00
+        </p>
+      </div>
     </footer>
     <!--Footer ends-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

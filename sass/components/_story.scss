@@ -10,7 +10,7 @@
       gap: 30px;
     }
 
-    @include desktop{
+    @include desktop {
       gap: 50px;
     }
   }
@@ -31,11 +31,11 @@
     }
   }
 
-  &__composition{
-    @include tablet{
+  &__composition {
+    @include tablet {
       width: 350px;
     }
-    @include tablet{
+    @include tablet {
       width: 450px;
     }
   }

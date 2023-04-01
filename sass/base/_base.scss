@@ -12,8 +12,8 @@ body {
   margin: 0 auto;
 
   @include mobile {
-      min-width: $mobile;
-    }
+    min-width: $mobile;
+  }
 
   @include mobile {
     min-width: $mobile;

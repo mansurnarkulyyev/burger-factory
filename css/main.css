@@ -43,8 +43,8 @@ img {
 /*Buttons*/
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #FFFFFF;
-  color: #2A2A2A;
+  background-color: #ffffff;
+  color: #2a2a2a;
 }
 
 /*General Responsive styles*/
@@ -200,7 +200,7 @@ body {
           flex-direction: column;
   height: 100vh;
   padding: 40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-top: 80px;
 }
 
@@ -298,7 +298,7 @@ body {
 }
 
 .mobile-link {
-  font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 47px;
@@ -374,7 +374,7 @@ body {
 
 .header__menu {
   display: none;
-  font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
   /*Animation*/
@@ -387,13 +387,14 @@ body {
 }
 
 .header__menu .header__menu--link {
-  color: #2A2A2A;
+  color: #2a2a2a;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__menu .header__menu--link:hover, .header__menu .header__menu--link:focus {
-  color: #008BF6;
+.header__menu .header__menu--link:hover,
+.header__menu .header__menu--link:focus {
+  color: #008bf6;
 }
 
 @media only screen and (min-width: 768px) {
@@ -418,7 +419,7 @@ body {
 }
 
 .footer {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   text-align: center;
   margin: 0 auto;
 }
@@ -467,12 +468,12 @@ body {
 
 /*Components*/
 .button {
-  background-color: #00B3FA;
+  background-color: #00b3fa;
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   cursor: pointer;
-  color: #2A2A2A;
+  color: #2a2a2a;
   padding: 15px 35px;
   border: none;
   border-radius: 5px;
@@ -511,17 +512,19 @@ body {
 }
 
 .button--yellow {
-  background-color: #F6E224;
+  background-color: #f6e224;
 }
 
-.button:hover, .button:focus {
-  background-color: #008BF6;
-  color: #FFFFFF;
+.button:hover,
+.button:focus {
+  background-color: #008bf6;
+  color: #ffffff;
 }
 
-.button--yellow:hover, .button--yellow:focus {
+.button--yellow:hover,
+.button--yellow:focus {
   background-color: orange;
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
 
 /*Main styles*/
@@ -827,7 +830,7 @@ body {
   display: block;
   top: 90%;
   text-align: left;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   padding: 20px;
   -webkit-box-shadow: 0px 5px 6px #00000029;
@@ -848,7 +851,7 @@ body {
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #008BF6;
+  color: #008bf6;
   margin-left: auto;
 }
 
@@ -969,7 +972,7 @@ body {
   font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #008BF6;
+  color: #008bf6;
 }
 
 .burgers__component:hover,
@@ -1042,7 +1045,7 @@ body {
   position: absolute;
   top: 45px;
   left: 95px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
   width: 50px;

@@ -38,7 +38,7 @@
   background-color: #fff;
   overflow-y: scroll;
 
-@include tablet {
+  @include tablet {
     display: none;
   }
 }
@@ -73,13 +73,12 @@
     display: block;
   }
 
- @include tablet {
+  @include tablet {
     display: none;
   }
-
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 .mobile-container.is-open {
@@ -105,7 +104,7 @@
 }
 
 .mobile-link {
-  font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 47px;
@@ -120,10 +119,9 @@
     color: #2196f3;
   }
 }
-.mobile-list{
-      margin-top: 55px;
+.mobile-list {
+  margin-top: 55px;
 }
-
 
 /*Header*/
 
@@ -131,19 +129,18 @@
   box-shadow: 0px 3px 6px #00000029;
   position: relative;
   z-index: 1;
- 
-  
+
   &__container {
     align-items: center;
     padding: 10px 10px;
     margin: 0 auto;
     justify-content: space-between;
 
-    @include tablet{
+    @include tablet {
       padding: 10px 50px;
     }
 
-    @include desktop{
+    @include desktop {
       padding: 15px 15px;
     }
   }
@@ -164,33 +161,30 @@
       position: relative;
       z-index: 2;
       height: 50px;
-      
     }
   }
 
   &__menu {
     display: none;
-    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 700;
-    
-    &--link{
-      @include desktop{
+
+    &--link {
+      @include desktop {
         font-size: 12px;
       }
     }
 
-/*Animation*/
-.header__menu--link{
-color: $fontPrimary;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__menu--link:hover, .header__menu--link:focus{
-color: $buttonLink;
-}
-
-
-  
+    /*Animation*/
+    .header__menu--link {
+      color: $fontPrimary;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header__menu--link:hover,
+    .header__menu--link:focus {
+      color: $buttonLink;
+    }
 
     @include tablet {
       display: flex;
@@ -200,7 +194,7 @@ color: $buttonLink;
       text-transform: uppercase;
     }
 
-    @include desktop{
+    @include desktop {
       margin-left: 50px;
       gap: 40px;
     }
