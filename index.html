@@ -118,6 +118,53 @@
         </div>
 
         <picture class="hero__image">
+          <!--WebP-->
+          <source
+            srcset="
+              ./images/hero-image-desktop.webp    1x,
+              ./images/hero-image-desktop_2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1440px)"
+            width="625"
+            height="646"
+          />
+
+          <source
+            srcset="
+              ./images/hero-image-tablet.webp    1x,
+              ./images/hero-image-tablet_2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 768px)"
+            width="437"
+            height="451"
+          />
+
+          <source
+            srcset="
+              ./images/hero-image-mobile.webp    1x,
+              ./images/hero-image-mobile_2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 320px)"
+            width="312"
+            height="322"
+          />
+
+          <source
+            srcset="
+              ./images/hero-image-mobile.webp    1x,
+              ./images/hero-image-mobile_2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 319px)"
+            width="312"
+            height="322"
+          />
+
+          <!--Bitmap-->
+
           <source
             srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png 2x"
             media="(min-width: 1440px)"
